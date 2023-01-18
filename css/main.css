@@ -1,0 +1,238 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-red {
+  background-color: #BF0000;
+}
+
+.bg-graystrong {
+  background-color: #424242;
+}
+
+.bg-graymedium {
+  background-color: #898A8A;
+}
+
+.bg-graylight {
+  background-color: #E0E5E4;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.img-logo {
+  width: 1%;
+}
+
+.img-prod {
+  width: 40rem;
+}
+
+.ig {
+  width: 4rem;
+  margin: 1rem;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+h1 {
+  font-size: 5em;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+h2, h3 {
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.titleAccordion {
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.textAccordion {
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.textPayment {
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-weight: normal;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 99%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.bg-main {
+  background-image: url(../img/background/designblack.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+}
+
+.formasDePago {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.figPayment {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-pregfrec {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paymentLogo {
+  height: 260px;
+  width: 200px;
+}
+
+/* Gradiente */
+.lineargradient {
+  background: linear-gradient(to right, #898A8A, #000000);
+}
+
+/*Fin Gradiente */
+/* Inicio Configuración Nav */
+nav div ul li {
+  margin-right: 3.125rem;
+  white-space: 0.625rem;
+}
+
+.botonera, .buscadorprod {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  cursor: pointer;
+}
+.botonera:hover, .buscadorprod:hover {
+  color: rgb(191, 0, 0);
+}
+
+.buscadorprod {
+  font-size: 1.5em;
+}
+
+/* configuracion footer */
+footer {
+  display: flex;
+  justify-content: end;
+  align-items: space-between;
+  flex-wrap: wrap;
+  padding: 1.8rem 2rem;
+}
+footer a {
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-weight: normal;
+  text-align: right;
+  text-decoration: none;
+  cursor: pointer;
+}
+footer a:hover {
+  color: rgb(191, 0, 0);
+}
+
+.redes {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* fin configuracion footer */
+.productos {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  flex-wrap: wrap;
+}
+
+.producto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+@media (min-widht: 1024px) {
+  .flex-direction {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+//colors
+$textColorPrimary: rgb(255, 255, 255);
+$textColorSecondary: rgb(191, 0, 0);
+$textColorTertiary: rgb(0, 0, 0);
+
+//sizings
+$fontXL: 5em;
+$fontLG: 3em;
+$fontMD: 2em;
+$fontSM: 1.5em;
+$fontXS: 1em;
+
+//clases para textos
+
+.textCenter{
+	text-align: center;
+}
+.textRight{
+	text-align: right;
+}
+.textLeft{
+	text-align: left;
+}
+
+h1{
+    @include setText($fontXL, $textColorPrimary, center, bold,);
+    @include flex(center, flex-start, wrap);
+}
+
+h2{
+    @include setText($fontMD, $textColorTertiary, center, bold);
+    @include flex(center, flex-start, wrap);
+}
+
+h3{
+    @extend h2;
+    font-size: $fontSM;
+    font-style: italic;
+}
+
+.titleAccordion{
+    @include setText($fontSM, $textColorTertiary, center, bold);
+}
+
+.textAccordion{
+    @include setText($fontSM, $textColorTertiary, left, normal);
+}
+
+.textPayment{
+    @include setText($fontSM, $textColorTertiary, center, normal);
+}

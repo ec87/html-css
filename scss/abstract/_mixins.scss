@@ -1,0 +1,36 @@
+// textos
+
+@mixin setText($size, $color, $align, $weight) {
+    font-size: $size;
+    color: $color;
+    padding: 10px;
+    font-weight: $weight;
+    text-align: $align;
+    }
+
+@mixin breakpoint($break){
+    @if $break == mobile{
+        @media (min-width:576px){
+            @content;
+        }
+    }
+    @if $break == tablet{
+        @media(min-width: 1024px){
+            @content;
+        }
+    }
+    @if $break == desktop{
+        @media (min-width:1200px){
+            @content;
+        }
+    }
+}
+
+@mixin flex ($justify, $align, $wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+  
+}
+
